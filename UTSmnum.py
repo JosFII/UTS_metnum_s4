@@ -51,6 +51,7 @@ st.markdown("""berikut kode R untuk line chart demand dan hasilnya \n
 st.image("linep.png")
 st.write("berikut jumlah data null di setiap kolum")
 st.write(df.isnull().sum())
+st.write("karena hanya akan menggunakan Local Time at End of Hour dan demand maka data null pada row lain akan diabaikan")
 st.write("berikut statistik deskriptif")
 st.write(df.describe())
 
